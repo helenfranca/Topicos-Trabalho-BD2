@@ -35,13 +35,23 @@ DICA:
 # Sumário
 
 ### 1	COMPONENTES<br>
-Integrantes do grupo<br>
+Helen França Medeiros - helenfranca93@gmail.com<br>
+Maria Luiza de Freitas Ianne - malufrt@hotmail.com<br>
+Landerson Morais Alexandre - landerson.jbv@gmail.com<br>
 
 ### 2	INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> e motivação da escolha realizada. <br>
       
 ### 3	MINI-MUNDO<br>
-Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
+
+O MinhaVaga é um sistema mobile para controle de estacionamento, que conta com uma série de sensores, com o propósito de otimizar o tempo que as pessoas gastam ao procurarem por vagas em locais que ofereçam serviço de estacionamento como em shoppings e supermercados. Mostrando, em tempo real, as vagas disponíveis juntamente com sua localização dentro do estacionamento. Além disso, o sistema proporciona um controle de fluxo e o tempo de permanência dos carros, podendo gerar com esses dados, informações para verificar a demanda do estacionamento e se é viável aumentar sua capacidade, entre outros avanços. 
+ 
+Com o app é possível verificar as vagas e assim reservar uma disponível. Na reserva da vaga o usuário terá um tempo de 10 minutos para que sua escolha seja efetivada. Caso ele saia da vaga nesse período, a vaga previamente escolhida torna-se disponível, e uma mensagem é exibida para que o usuário informe a nova vaga escolhida. Ao reservar a vaga, é exibido uma rota indicando como chegar até ela, além disso um led indicando que ela está ocupada é aceso.                                              
+
+O app inclui pagamento via cartão além do comum nas bilheterias, sendo assim o usuário deve escanear o código de barras do ticket para efetivar o pagamento. Além de apresentar um plano de pagamento diferenciado, de forma mensal para aqueles motoristas que utilizam do estacionamento todos os dias. Após o pagamento, é iniciado um contador regressivo informando o tempo que o usuário tem para deixar a vaga. Caso ele não libere a vaga no tempo estipulado, o sistema o notifica e volta a contar como uma nova reserva.
+
+No caso do cliente que não faz uso do aplicativo, a vaga estacionada é marcada como ocupada por meio do sensor instalado. Assim mantendo o controle de vagas atualizado no aplicativo em tempo real.
+ <br>
 
 ### 4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
