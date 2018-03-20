@@ -40,8 +40,12 @@ Maria Luiza de Freitas Ianne - malufrt@hotmail.com<br>
 Landerson Morais Alexandre - landerson.jbv@gmail.com<br>
 
 ### 2	INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> e motivação da escolha realizada. <br>
-      
+
+Este documento contém a especificação do projeto do banco de dados MinhaVaga e motivação da escolha realizada. <br>
+
+Observando o tempo que as pessoas gastam ao procurar uma vaga em estacionamentos, e muitas vezes não encontram disponíveis, o app MinhaVaga é um projeto para tornar essa procura mais eficiente. Com o aplicativo é possível verificar vagas disponíveis, reserva-lás, e realizar o pagamento. 
+
+     
 ### 3	MINI-MUNDO<br>
 
 O MinhaVaga é um sistema mobile para controle de estacionamento, que conta com uma série de sensores, com o propósito de otimizar o tempo que as pessoas gastam ao procurarem por vagas em locais que ofereçam serviço de estacionamento como em shoppings e supermercados. Mostrando, em tempo real, as vagas disponíveis juntamente com sua localização dentro do estacionamento. Além disso, o sistema proporciona um controle de fluxo e o tempo de permanência dos carros, podendo gerar com esses dados, informações para verificar a demanda do estacionamento e se é viável aumentar sua capacidade, entre outros avanços. 
