@@ -62,11 +62,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 ### 5	MODELO CONCEITUAL<br>
-   <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
-
-
+  
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/sample_MC.png?raw=true "Modelo Conceitual")
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
     
      5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
 
