@@ -1,4 +1,4 @@
-/* Modelo Lógico: */
+/* Modelo Físico: */
 
 CREATE TABLE Cliente (
     nome Varchar,
