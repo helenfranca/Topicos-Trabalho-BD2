@@ -84,7 +84,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ### 6	MODELO LÓGICO<br>
 ### 7	MODELO FÍSICO<br>
-![Alt text](https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelo%20F%C3%ADsico
+![Modelo Físico](https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelo%20F%C3%ADsico
 "Modelo Físico")
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
