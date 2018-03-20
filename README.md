@@ -62,6 +62,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 ### 5	MODELO CONCEITUAL<br>
+   <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
+
+
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
 ![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/sample_MC.png?raw=true "Modelo Conceitual")
     
@@ -82,10 +85,14 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 
+
 ### 6	MODELO LÓGICO<br>
+   <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20L%C3%B3gico.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20L%C3%B3gico.PNG" alt="Alt text" title="Modelo Lógico" style="max-width:100%;"></a>
+   
+
+
 ### 7	MODELO FÍSICO<br>
-![Modelo Físico](https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelo%20F%C3%ADsico
-"Modelo Físico")
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelo%20F%C3%ADsico">Modelo Físico</a>
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
