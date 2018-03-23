@@ -81,11 +81,66 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     b) justifique!
 
 #### 5.4 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
+            
+    CLIENTE: Tabela que armazena as informações relativas ao cliente
+    Id_cliente: campo que armazena um número de identificação do cliente
+    Nome: campo que armazena o nome do cliente
+    CPF: campo que armazena o número de Cadastro de Pessoa Física do cliente
+    Email: campo que armazena o email do cliente
+    Senha: campo que armazena a senha do cliente para acesso ao sistema
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    RESERVA:Tabela que armazena as informações pertinentes a uma reserva realizada
+    Id_reserva: campo que armazena um número de identificação da reserva
+    DataReserva: campo que armazena a data em que a reserva foi realizada
+    HoraReserva: campo que armazena a hora em que a reserva foi realizada
+    HoraChegada: campo que armazena a hora em que a reserva foi efetiva, ou seja, que o usuário chegou na vaga
+    HoraSaida: campo que armazena hora em que a reserva foi terminada, ou seja, que o usuário retirou o carro
+            
+    PAGAMENTO: Tabela que armazena as informações sobre o pagamento realizado
+    Id_pagamento: campo que armazena um número de identificação do pagamento
+    DataPagamento: campo que armazena a data em que o pagamento foi feito
+    Valor: campo que armazena o valor pago pela reserva
+    Pago: campo boolean que armazena o status do pagamento [True/False]
+    
+    CARTAO: Tabela que armazena as informações sobre o cartão de crédito informado
+    Id_cartao: campo que armazena um número de identificação do pagamento
+    NomeTitular: campo que armazena o nome do titular impresso no cartão de crédito
+    NumeroCartao: campo que armazena o número impresso no cartão de crédito
+    DataValidade: campo que armazena a data de validade do cartão de crédito
+    Cvv: campo que armazena o numero do código de verificação do cartão
+    
+    CLIENTE_CARTAO: Tabela que armazena as informações sobre a ligação entre o cliente e o cartão por ele cadastrado
+    Id_Cliente: campo que armazena o id do cliente [Extrangeira - Tabela Cliente]
+    Id_Cartao: campo que armazena o id do cartão [Extrangeira - Tabela Cartao]
+    
+    VAGA: Tabela que armazena as informações sobre a vaga
+    Id_Vaga: campo que armazena o número de identificação da vaga
+    Cobertura: campo boolean que informa se a vaga é coberta ou não [True/False]
+    Status: campo boolean que informa se a vaga está disponível ou não [True/False]
+    Id_Localizacao: campo que armazena o id da localização da vaga [Extrangeira - Tabela Localizacao]
+    Id_Tipo: campo que armazena o id do tipo de vaga [Extrangeira - Tabela Tipo]
+    Id_Patio: campo que armazena o id do patio em que a vaga está instalada [Extrangeira - Tabela Patio]
+    
+    TIPO: Tabela que armazena as informações sobre o tipo da vaga
+    Id_Tipo: campo que armazena um número de identificação do tipo
+    Nome: campo que armazena o nome do tipo [Comum/Idoso/Deficiente/Moto]
+    
+    LOCALIZACAO: Tabela que armazena as informações de localidade
+    Id_Localizacao: campo que armazena um número de identificação da localização
+    Longitude: campo que armazena a longitude da localização
+    latitude: campo que armazena a latitude da localização
+    
+    ESTACIONAMENTO: Tabela que armazena as informações do estacionamento
+    Id_Estacionamento: campo que armazena um número de identificação do estacionamento
+    Nome: campo que armazena o nome do estacionamento
+    Valor_Hora: campo que armazena o valor do estacionamento por hora
+    Capacidade: campo que armazena a capacidade de veículos que o estacionamento comporta
+    Id_Localizacao: campo que armazena o id da localização do estacionamento [Extrangeira - Tabela Localizacao]
+    
+    PATIO: Tabela que armazena informações sobre o pátio
+    Id_Patio: campo que armazena um número de identificação do pátio
+    Sigla: campo que armazena a sigla do pátio
+    Id_Estacionamento: campo que armazena o id do estacionamento que o pátio pertence [Extrangeira - Tabela Estacionamento]
 
 
 ### 6	MODELO LÓGICO<br>
