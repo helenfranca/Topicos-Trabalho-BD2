@@ -68,7 +68,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ### 5	MODELO CONCEITUAL<br>
   
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.png"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.png" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
     
      5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
 
@@ -144,7 +144,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 ### 6	MODELO LÓGICO<br>
-   <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20L%C3%B3gico.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20L%C3%B3gico.PNG" alt="Alt text" title="Modelo Lógico" style="max-width:100%;"></a>
+   <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20L%C3%B3gico.png"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20L%C3%B3gico.png" alt="Alt text" title="Modelo Lógico" style="max-width:100%;"></a>
    
 
 
