@@ -73,13 +73,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
      5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
 
 #### 5.3 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
-    
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
 
+    Em todo projeto decidimos por seguir a normalidade aplicada a criação de banco de dados.
+    
 #### 5.4 DESCRIÇÃO DOS DADOS 
             
     CLIENTE: Tabela que armazena as informações relativas ao cliente
