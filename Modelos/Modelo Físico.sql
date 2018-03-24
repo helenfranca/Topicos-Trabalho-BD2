@@ -1,4 +1,4 @@
-/* Modelo Físico: */
+/* Modelo Lógico: */
 
 CREATE TABLE Cliente (
     nome Varchar,
@@ -10,10 +10,9 @@ CREATE TABLE Cliente (
 
 CREATE TABLE Vaga (
     id_vaga int PRIMARY KEY,
-    interno boolean,
-    patio Varchar,
+    cobertura boolean,
     status Varchar,
-    FK_Estacionamento_id_estacionamento int,
+    FK_Patio_id_patio int,
     FK_Localizacao_id_localizacao int,
     FK_Tipo_id_tipo int
 );
@@ -21,8 +20,8 @@ CREATE TABLE Vaga (
 CREATE TABLE Estacionamento (
     valor_hora money,
     capacidade int,
-    id_estacionamento int PRIMARY KEY,
     nome Varchar,
+    id_estacionamento int PRIMARY KEY,
     FK_Localizacao_id_localizacao int
 );
 
@@ -65,14 +64,20 @@ CREATE TABLE Tipo (
     nome Varchar
 );
 
+CREATE TABLE Patio (
+    id_patio int PRIMARY KEY,
+    sigla Varchar,
+    FK_Estacionamento_id_estacionamento int
+);
+
 CREATE TABLE Cliente_Cartao (
     FK_Cliente_id_cliente int,
     FK_Cartao_id_cartao int
 );
  
 ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_1
-    FOREIGN KEY (FK_Estacionamento_id_estacionamento)
-    REFERENCES Estacionamento (id_estacionamento)
+    FOREIGN KEY (FK_Patio_id_patio)
+    REFERENCES Patio (id_patio)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
  
 ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_2
@@ -108,6 +113,11 @@ ALTER TABLE Reserva ADD CONSTRAINT FK_Reserva_2
 ALTER TABLE Reserva ADD CONSTRAINT FK_Reserva_3
     FOREIGN KEY (FK_Pagamento_id_pagamento)
     REFERENCES Pagamento (id_pagamento)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE Patio ADD CONSTRAINT FK_Patio_1
+    FOREIGN KEY (FK_Estacionamento_id_estacionamento)
+    REFERENCES Estacionamento (id_estacionamento)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
  
 ALTER TABLE Cliente_Cartao ADD CONSTRAINT FK_Cliente_Cartao_0
