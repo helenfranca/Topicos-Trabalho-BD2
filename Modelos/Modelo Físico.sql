@@ -38,7 +38,7 @@ CREATE TABLE Reserva (
     dataReserva Date,
     horaReserva Time,
     horaChegada Time,
-    dataSaida Time,
+    dataSaida Date,
     horaSaida Time,
     id_cliente int,
     id_vaga int,
