@@ -4,13 +4,8 @@ CREATE TABLE Cliente (
     id_cliente int PRIMARY KEY,
     nome Varchar,
     email Varchar,
-<<<<<<< HEAD
     senha Varchar,
-	cpf int,
-    id_cliente int PRIMARY KEY
-=======
-    senha Varchar   
->>>>>>> a14db132e43411ab3bc34b5c8bf8600b0cb56f94
+    cpf bigint
 );
 
 CREATE TABLE Vaga (
@@ -53,7 +48,7 @@ CREATE TABLE Reserva (
 CREATE TABLE Cartao (
     id_cartao int PRIMARY KEY,
     nomeTitular Varchar,
-    numeroCartao int,
+    numeroCartao bigint,
     dataValidade Date,
     cvv int    
 );
