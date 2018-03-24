@@ -1,11 +1,11 @@
 /* Modelo Lógico: */
 
 CREATE TABLE Cliente (
+    id_cliente int PRIMARY KEY,
     nome Varchar,
     cpf int,
     email Varchar,
-    senha Varchar,
-    id_cliente int PRIMARY KEY
+    senha Varchar   
 );
 
 CREATE TABLE Vaga (
@@ -18,16 +18,16 @@ CREATE TABLE Vaga (
 );
 
 CREATE TABLE Estacionamento (
+    id_estacionamento int PRIMARY KEY,
     valor_hora money,
     capacidade int,
-    nome Varchar,
-    id_estacionamento int PRIMARY KEY,
+    nome Varchar,   
     FK_Localizacao_id_localizacao int
 );
 
 CREATE TABLE Pagamento (
-    dataPagamento Date,
     id_pagamento int PRIMARY KEY,
+    dataPagamento Date,    
     valor money,
     pago boolean,
     FK_Cartao_id_cartao int
@@ -46,11 +46,11 @@ CREATE TABLE Reserva (
 );
 
 CREATE TABLE Cartao (
+    id_cartao int PRIMARY KEY,
     nomeTitular Varchar,
     numeroCartao int,
     dataValidade Date,
-    cvv int,
-    id_cartao int PRIMARY KEY
+    cvv int    
 );
 
 CREATE TABLE Localizacao (
