@@ -2,9 +2,9 @@
 
 CREATE TABLE Cliente (
     nome Varchar,
-    cpf int,
     email Varchar,
     senha Varchar,
+	cpf int,
     id_cliente int PRIMARY KEY
 );
 
