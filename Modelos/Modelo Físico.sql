@@ -11,7 +11,7 @@ CREATE TABLE Cliente (
 CREATE TABLE Vaga (
     id_vaga int PRIMARY KEY,
     cobertura boolean,
-    status Varchar,
+    status boolean,
     id_patio int,
     id_localizacao int,
     id_tipo int
