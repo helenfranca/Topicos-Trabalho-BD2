@@ -10,7 +10,7 @@ values (1,'Maria da Graça','mariadagraca@email.com','maria123',12345678910),
 	   (9,'Manoela Marlim','manoela@email.com','marlim123',91827364733),
 	   (10,'Carol Carine','carol@email.com','carol123',87622234567);
 	   
--- datavalidade deve ser AAAA-MM
+-- datavalidade deve ser AAAA-MM, está desse modo abaixo pois o banco não aceita só ano/mês
 insert into cartao(id_cartao,nometitular,datavalidade,cvv,numerocartao) 
 values (1,'Maria da Graca','2022-02-01',123,111122223333444),
 	   (2,'Joao Silva','2022-03-01',234,2222333344445555),
