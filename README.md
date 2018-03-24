@@ -145,7 +145,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 ### 7	MODELO FÍSICO<br>
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelo%20F%C3%ADsico">Modelo Físico</a>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20F%C3%ADsico.sql">Modelo Físico</a>
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
