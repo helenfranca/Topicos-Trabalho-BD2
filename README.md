@@ -172,16 +172,47 @@ Não utilizamos códigos previamente pronto. Desenvolvemos projeto a partir de s
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	GERACAO DE DADOS (MÍNIMO DE 10 REGISTROS PARA CADA TABELA NO BANCO DE DADOS)<br>
 
-SELECT * from Cliente;
-SELECT * from Vaga;
-SELECT * from Estacionamento;
-SELECT * from Pagamento;
-SELECT * from Reserva;
-SELECT * from Cartao;
-SELECT * from Localizacao;
-SELECT * from Tipo;
-SELECT * from Patio;
-SELECT * from Cliente_Cartao;
+SELECT * from Cliente
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Vaga
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Vaga.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Vaga.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Estacionamento
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Estacionamento.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Estacionamento.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Pagamento
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Pagamento.PNG><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Pagamento.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Reserva
+<a href="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG"><img src="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Cartao
+<a href="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG"><img src="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Localizacao
+<a href="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG"><img src="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Tipo
+<a href="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG"><img src="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Patio
+<a href="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG"><img src="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+SELECT * from Cliente_Cartao
+<a href="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG"><img src="https://github.com/RodoBus/trab01/blob/master/Imagens%20SELECT/9.1_PESSOA_1.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>  
+
+<br>
 
 ## Data de Entrega: (18/09/2017)
 
