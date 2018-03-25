@@ -1,4 +1,4 @@
-# TRABALHO 01 : Título do trabalho
+# TRABALHO 01 : MinhaVaga
 Trabalho desenvolvido durante a disciplina de BD
 
     O referido projeto poderá ser:
@@ -77,13 +77,13 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     Em todo projeto decidimos por seguir a normalidade aplicada a criação de banco de dados.
     
 #### 5.4 DESCRIÇÃO DOS DADOS 
-            
-    CLIENTE: Tabela que armazena as informações relativas ao cliente
-    Id_cliente: campo que armazena um número de identificação do cliente (chave primária)
-    Nome: campo que armazena o nome do cliente
-    CPF: campo que armazena o número de Cadastro de Pessoa Física do cliente
-    Email: campo que armazena o email do cliente
-    Senha: campo que armazena a senha do cliente para acesso ao sistema
+     
+    <b>Tabela CLIENTE</b>: Tabela que armazena as informações relativas ao cliente.
+    <li>Id_cliente: campo que armazena um número de identificação do cliente (chave primária).<br>
+    Nome: campo que armazena o nome do cliente.<br>
+    CPF: campo que armazena o número de Cadastro de Pessoa Física do cliente.<br>
+    Email: campo que armazena o email do cliente.<br>
+    Senha: campo que armazena a senha do cliente para acesso ao sistema.</li>
     
     RESERVA:Tabela que armazena as informações pertinentes a uma reserva realizada
     Id_reserva: campo que armazena um número de identificação da reserva (chave primária)
