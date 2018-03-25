@@ -153,6 +153,9 @@ Id_Estacionamento: campo que faz referência a um registro da tabela ESTACIONAME
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
+
+Não utilizamos códigos previamente pronto. Desenvolvemos projeto a partir de situações cotidianas. 
+
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
         Referenciar todas as fontes referentes a:
         a) obtenção dos dados
@@ -160,12 +163,25 @@ Id_Estacionamento: campo que faz referência a um registro da tabela ESTACIONAME
         c) fontes de estudo para desenvolvimento do projeto
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/minhaVaga.sql">Script de insert de dados ao banco.</a>
+
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
         b) inclusão das instruções de inserção dos dados nas referidas tabelas
         c) inclusão das instruções para execução de outros procedimentos necessários
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	GERACAO DE DADOS (MÍNIMO DE 10 REGISTROS PARA CADA TABELA NO BANCO DE DADOS)<br>
+
+SELECT * from Cliente;
+SELECT * from Vaga;
+SELECT * from Estacionamento;
+SELECT * from Pagamento;
+SELECT * from Reserva;
+SELECT * from Cartao;
+SELECT * from Localizacao;
+SELECT * from Tipo;
+SELECT * from Patio;
+SELECT * from Cliente_Cartao;
 
 ## Data de Entrega: (18/09/2017)
 
