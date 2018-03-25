@@ -172,43 +172,43 @@ Não utilizamos códigos previamente pronto. Desenvolvemos projeto a partir de s
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	GERACAO DE DADOS (MÍNIMO DE 10 REGISTROS PARA CADA TABELA NO BANCO DE DADOS)<br>
 
-SELECT * from Cliente
+SELECT * from Cliente <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Vaga
+SELECT * from Vaga <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Vaga.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Vaga.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Estacionamento
+SELECT * from Estacionamento <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Estacionamento.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Estacionamento.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Pagamento
+SELECT * from Pagamento <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Pagamento.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Pagamento.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Reserva
+SELECT * from Reserva <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Reserva.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Reserva.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Cartao
+SELECT * from Cartao <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cartao.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cartao.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Localizacao
+SELECT * from Localizacao <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Localizacao.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Localizacao.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Tipo
+SELECT * from Tipo <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Tipo.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Tipo.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Patio
+SELECT * from Patio <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Patio.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Patio.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
-SELECT * from Cliente_Cartao
+SELECT * from Cliente_Cartao <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente_Cartao.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente_Cartao.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 
