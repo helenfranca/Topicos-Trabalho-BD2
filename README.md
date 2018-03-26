@@ -60,9 +60,7 @@ No caso do cliente que não faz uso do aplicativo, a vaga estacionada é marcada
 ### 4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
-
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/balsamiq.png?raw=true "Title")
+Protótipo: https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Prot%C3%B3tipo.pdf<br>
 
 
 ### 5	MODELO CONCEITUAL<br>
