@@ -72,73 +72,79 @@ Protótipo: https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Mode
 
 #### 5.3 DECISÕES DE PROJETO
 
-    Em todo projeto decidimos por seguir a normalidade aplicada a criação de banco de dados.
+<!--
+Em todo projeto decidimos por seguir a normalidade aplicada a criação de banco de dados.
+-->
+Decidimos criar a tabela CLIENTE_CARTAO para possibilitar o cliente cadastrar mais de um cartão, e utilizar cartões existentes em outras contas. Com o intuito de relacionar as chaves primária de CLIENTE e CARTAO.
+
+Além disso criamos a tabela Localizacao para unificar as informações latitude e longitude, que possuem formato de dados semelhante presentes nas tabelas de ESTACIONAMENTO e VAGA.
+
     
 #### 5.4 DESCRIÇÃO DOS DADOS 
 
 <b>Tabela CLIENTE</b>: Tabela que armazena as informações relativas ao cliente.<br>
-Id_cliente: campo que armazena um número de identificação do cliente (chave primária).<br>
-Nome: campo que armazena o nome do cliente.<br>
-CPF: campo que armazena o número de Cadastro de Pessoa Física do cliente.<br>
-Email: campo que armazena o email do cliente.<br>
-Senha: campo que armazena a senha do cliente para acesso ao sistema.<br>
+id_cliente: campo que armazena um número de identificação do cliente (chave primária).<br>
+nome: campo que armazena o nome do cliente.<br>
+cpf: campo que armazena o número de cadastro de Pessoa Física do cliente.<br>
+email: campo que armazena o email do cliente.<br>
+senha: campo que armazena a senha do cliente para acesso ao sistema.<br>
 
 <b>Tabela RESERVA</b>: Tabela que armazena as informações pertinentes a uma reserva realizada.<br>
-Id_reserva: campo que armazena um número de identificação da reserva (chave primária).<br>
-DataReserva: campo que armazena a data em que a reserva foi realizada.<br>
-HoraReserva: campo que armazena a hora em que a reserva foi realizada.<br>
-HoraChegada: campo que armazena a hora em que a reserva foi efetiva, ou seja, que o usuário chegou na vaga.<br>
-HoraSaida: campo que armazena hora em que a reserva foi terminada, ou seja, que o usuário retirou o carro.<br>
-Id_cliente: campo que faz referência a um registro da tabela CLIENTE (chave estrangeira).<br>
-Id_vaga: campo que faz referência a um registro da tabela VAGA (chave estrangeira).<br>
-Id_pagamento: campo que faz referência a um registro da tabela PAGAMENTO (chave estrangeira).<br>
+id_reserva: campo que armazena um número de identificação da reserva (chave primária).<br>
+dataReserva: campo que armazena a data em que a reserva foi realizada.<br>
+horaReserva: campo que armazena a hora em que a reserva foi realizada.<br>
+horaChegada: campo que armazena a hora em que a reserva foi efetiva, ou seja, que o usuário chegou na vaga.<br>
+horaSaida: campo que armazena hora em que a reserva foi terminada, ou seja, que o usuário retirou o carro.<br>
+id_cliente: campo que faz referência a um registro da tabela CLIENTE (chave estrangeira).<br>
+id_vaga: campo que faz referência a um registro da tabela VAGA (chave estrangeira).<br>
+id_pagamento: campo que faz referência a um registro da tabela PAGAMENTO (chave estrangeira).<br>
             
 <b>Tabela PAGAMENTO</b>: Tabela que armazena as informações sobre o pagamento realizado.<br>
-Id_pagamento: campo que armazena um número de identificação do pagamento (chave primária).<br>
-DataPagamento: campo que armazena a data em que o pagamento foi feito.<br>
-Valor: campo que armazena o valor pago pela reserva.<br>
-Pago: campo boolean que armazena o status do pagamento [True/False].<br>
-Id_cartao: campo que faz referência a um registro da tabela CARTAO (chave estrangeira).<br>
+id_pagamento: campo que armazena um número de identificação do pagamento (chave primária).<br>
+dataPagamento: campo que armazena a data em que o pagamento foi feito.<br>
+valor: campo que armazena o valor pago pela reserva.<br>
+pago: campo boolean que armazena o status do pagamento [True/False].<br>
+id_cartao: campo que faz referência a um registro da tabela CARTAO (chave estrangeira).<br>
     
 <b>Tabela CARTAO</b>: Tabela que armazena as informações sobre o cartão de crédito informado.<br>
-Id_cartao: campo que armazena um número de identificação do pagamento (chave primária).<br>
-NomeTitular: campo que armazena o nome do titular impresso no cartão de crédito.<br>
-NumeroCartao: campo que armazena o número impresso no cartão de crédito.<br>
-DataValidade: campo que armazena a data de validade do cartão de crédito.<br>
-Cvv: campo que armazena o numero do código de verificação do cartão.<br>
+id_cartao: campo que armazena um número de identificação do pagamento (chave primária).<br>
+nomeTitular: campo que armazena o nome do titular impresso no cartão de crédito.<br>
+numeroCartao: campo que armazena o número impresso no cartão de crédito.<br>
+dataValidade: campo que armazena a data de validade do cartão de crédito.<br>
+cvv: campo que armazena o numero do código de verificação do cartão.<br>
 
 <b>Tabela CLIENTE_CARTAO</b>: Tabela que armazena as informações sobre a ligação entre o cliente e o cartão por ele cadastrado.<br>
-Id_Cliente: campo que faz referência a um registro da tabela CLIENTE (chave estrangeira).<br>
-Id_Cartao: campo que faz referência a um registro da tabela CARTAO (chave estrangeira).<br>
+id_Cliente: campo que faz referência a um registro da tabela CLIENTE (chave estrangeira).<br>
+id_Cartao: campo que faz referência a um registro da tabela CARTAO (chave estrangeira).<br>
     
 <b>Tabela VAGA</b>: Tabela que armazena as informações sobre a vaga.<br>
-Id_Vaga: campo que armazena o número de identificação da vaga (chave primária).<br>
-Cobertura: campo boolean que informa se a vaga é coberta ou não [True/False].<br>
-Status: campo boolean que informa se a vaga está disponível ou não [True/False].<br>
-Id_Localizacao: campo que faz referência a um registro da tabela LOCALIZACAO (chave estrangeira).<br>
-Id_Tipo: campo que faz referência a um registro da tabela TIPO (chave estrangeira).<br>
-Id_Patio: campo que faz referência a um registro da tabela PATIO (chave estrangeira).<br>
+id_Vaga: campo que armazena o número de identificação da vaga (chave primária).<br>
+cobertura: campo boolean que informa se a vaga é coberta ou não [True/False].<br>
+status: campo boolean que informa se a vaga está disponível ou não [True/False].<br>
+id_Localizacao: campo que faz referência a um registro da tabela LOCALIZACAO (chave estrangeira).<br>
+id_Tipo: campo que faz referência a um registro da tabela TIPO (chave estrangeira).<br>
+id_Patio: campo que faz referência a um registro da tabela PATIO (chave estrangeira).<br>
     
 <b>Tabela TIPO</b>: Tabela que armazena as informações sobre o tipo da vaga.<br>
-Id_Tipo: campo que armazena um número de identificação do tipo (chave primária).<br>
-Nome: campo que armazena o nome do tipo [Comum/Idoso/Deficiente/Moto].<br>
+id_Tipo: campo que armazena um número de identificação do tipo (chave primária).<br>
+nome: campo que armazena o nome do tipo [Comum/Idoso/Deficiente/Moto].<br>
     
 <b>Tabela LOCALIZACAO</b>: Tabela que armazena as informações de localidade.<br>
-Id_Localizacao: campo que armazena um número de identificação da localização (chave primária).<br>
-Longitude: campo que armazena a longitude da localização.<br>
-Latitude: campo que armazena a latitude da localização.<br>
+id_Localizacao: campo que armazena um número de identificação da localização (chave primária).<br>
+longitude: campo que armazena a longitude da localização.<br>
+latitude: campo que armazena a latitude da localização.<br>
     
 <b>Tabela ESTACIONAMENTO</b>: Tabela que armazena as informações do estacionamento.<br>
-Id_Estacionamento: campo que armazena um número de identificação do estacionamento (chave primária).<br>
-Nome: campo que armazena o nome do estacionamento.<br>
-Valor_Hora: campo que armazena o valor do estacionamento por hora.<br>
-Capacidade: campo que armazena a capacidade de veículos que o estacionamento comporta.<br>
-Id_Localizacao: campo que faz referência a um registro da tabela LOCALIZACAO (chave estrangeira).<br>
+id_Estacionamento: campo que armazena um número de identificação do estacionamento (chave primária).<br>
+nome: campo que armazena o nome do estacionamento.<br>
+valor_Hora: campo que armazena o valor do estacionamento por hora.<br>
+capacidade: campo que armazena a capacidade de veículos que o estacionamento comporta.<br>
+id_Localizacao: campo que faz referência a um registro da tabela LOCALIZACAO (chave estrangeira).<br>
     
 <b>Tabela PATIO</b>: Tabela que armazena informações sobre o pátio.<br>
-Id_Patio: campo que armazena um número de identificação do pátio (chave primária).<br>
-Sigla: campo que armazena a sigla do pátio.<br>
-Id_Estacionamento: campo que faz referência a um registro da tabela ESTACIONAMENTO (chave estrangeira).<br>
+id_Patio: campo que armazena um número de identificação do pátio (chave primária).<br>
+sigla: campo que armazena a sigla do pátio.<br>
+id_Estacionamento: campo que faz referência a um registro da tabela ESTACIONAMENTO (chave estrangeira).<br>
 <br>
 
 ### 6	MODELO LÓGICO<br>
