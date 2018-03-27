@@ -1,6 +1,6 @@
 # TRABALHO 01 : MinhaVaga
 Trabalho desenvolvido durante a disciplina de BD
-
+<!--
     O referido projeto poderá ser:
         a) Um novo sistema/projeto 
         b) Uma expansão de sistema/projeto previamente desenvolvido em disciplinas anteriores 
@@ -32,6 +32,8 @@ DICA:
     https://www.kickstarter.com/discover/categories/technology/software
     <br>
     https://www.kickstarter.com/discover/categories/technology/apps
+
+-->
 # Sumário
 
 ### 1	COMPONENTES<br>
@@ -79,6 +81,7 @@ Decidimos criar a tabela CLIENTE_CARTAO para possibilitar o cliente cadastrar ma
 
 Além disso criamos a tabela Localizacao para unificar as informações latitude e longitude, que possuem formato de dados semelhante presentes nas tabelas de ESTACIONAMENTO e VAGA.
 
+Tendo em vista explicitação do evento que o ocorre ao se realizar um pagamento, foi decidido que a relação Pagamento-Finaliza-Reserva no modelo conceitual tornaria duas tabelas diferentes ao invés de se fundirem, visto que se trata de um relacionamento 1 para 1.
     
 #### 5.4 DESCRIÇÃO DOS DADOS 
 
