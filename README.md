@@ -1,5 +1,5 @@
 # TRABALHO 01 : MinhaVaga
-Trabalho desenvolvido durante a disciplina de BD
+Trabalho desenvolvido durante a disciplina de BD2
 <!--
     O referido projeto poderá ser:
         a) Um novo sistema/projeto 
