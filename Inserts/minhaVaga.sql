@@ -1,13 +1,13 @@
-DROP TABLE Reserva;
-DROP TABLE Pagamento;
-DROP TABLE Vaga;
-DROP TABLE Patio;
-DROP TABLE Estacionamento;
-DROP TABLE Cliente_Cartao;
-DROP TABLE Localizacao;
-DROP TABLE Tipo;
-DROP TABLE Cartao;
-DROP TABLE Cliente;
+DROP TABLE IF EXISTS Reserva;
+DROP TABLE IF EXISTS Pagamento;
+DROP TABLE IF EXISTS Vaga;
+DROP TABLE IF EXISTS Patio;
+DROP TABLE IF EXISTS Estacionamento;
+DROP TABLE IF EXISTS Cliente_Cartao;
+DROP TABLE IF EXISTS Localizacao;
+DROP TABLE IF EXISTS Tipo;
+DROP TABLE IF EXISTS Cartao;
+DROP TABLE IF EXISTS Cliente;
 
 
 
@@ -146,9 +146,9 @@ ALTER TABLE Cliente_Cartao ADD CONSTRAINT FK_Cliente_Cartao_1
 
 
 INSERT INTO Cliente(id_cliente,nome,email,senha,cpf)
-VALUES (1,'Maria da GraÁa','mariadagraca@email.com','maria123',12345678910),
-       (2,'Jo„o Silva','joaosilva@email.com','joao123',32165498709),
-       (3,'JosÈ Antunes','joseantunes@email.com','jose123',13524635789),
+VALUES (1,'Maria da Gra√ßa','mariadagraca@email.com','maria123',12345678910),
+       (2,'Jo√£o Silva','joaosilva@email.com','joao123',32165498709),
+       (3,'Jos√© Antunes','joseantunes@email.com','jose123',13524635789),
 	   (4,'Lara Linda','laralinda@email.com','lara123',98765432111),
 	   (5,'Magali Melancia','magali@emai.com','magali123',23453123489),
 	   (6,'Joana Ferreira','joanaferreira@email.com','joana123',98712376534),
@@ -158,7 +158,7 @@ VALUES (1,'Maria da GraÁa','mariadagraca@email.com','maria123',12345678910),
 	   (10,'Carol Carine','carol@email.com','carol123',87622234567);
 	   
 	   
--- datavalidade deve ser AAAA-MM, est· desse modo abaixo pois o banco n„o aceita sÛ ano/mÍs
+-- datavalidade deve ser AAAA-MM, est√° desse modo abaixo pois o banco n√£o aceita s√≥ ano/m√™s
 INSERT INTO Cartao(id_cartao,nomeTitular,numeroCartao,dataValidade,cvv) 
 VALUES (1,'Maria da Graca',111122223333444,'2022-02-01',123),
 	   (2,'Joao Silva',2222333344445555,'2022-03-01',234),
@@ -200,8 +200,8 @@ VALUES (1,1),
 
 	   
 INSERT INTO Estacionamento(id_estacionamento,valor_hora,capacidade,nome,id_localizacao)
-VALUES (1,15.00,250,'Shopping VitÛria',1),
-	   (2,10.00,200,'Shopping Mestre ¡lvaro',2);
+VALUES (1,15.00,250,'Shopping Vit√≥ria',1),
+	   (2,10.00,200,'Shopping Mestre √Ålvaro',2);
 	   
 
 INSERT INTO Patio(id_patio,sigla,id_estacionamento) 
