@@ -155,7 +155,8 @@ VALUES (1,'Maria da Graça','mariadagraca@email.com','maria123',12345678910),
 	   (7,'Moana de Motonui','moanamotonui@email.com','moana123',91827364567),
 	   (8,'Maui Semideus','maui@email.com','maui123',23498710023),
 	   (9,'Manoela Marlim','manoela@email.com','marlim123',91827364733),
-	   (10,'Carol Carine','carol@email.com','carol123',87622234567);
+	   (10,'Carol Carine','carol@email.com','carol123',87622234567),
+	   (11,'Maria das Graças Santos','mariagraca123@email.com','mariags321',20125012354);
 	   
 	   
 -- datavalidade deve ser AAAA-MM, está desse modo abaixo pois o banco não aceita só ano/mês
@@ -169,7 +170,8 @@ VALUES (1,'Maria da Graca',111122223333444,'2022-02-01',123),
 	   (7,'Moana de Motonui',7777888899990000,'2025-02-01',789),
 	   (8,'Maui Semideus',8888999900001111,'2025-03-01',890),
 	   (9,'Manoela Marlim',9999000011112222,'2022-06-01',901),
-	   (10,'Carol Carine',0000111122223333,'2023-06-01',012);
+	   (10,'Carol Carine',0000111122223333,'2023-06-01',012),
+	   (11,'Maria da Graca',2020303040405050,'2022-02-03',123);
 	   
 
 INSERT INTO Tipo(id_tipo,nome) 
@@ -196,7 +198,10 @@ VALUES (1,1),
 	   (7,7),
 	   (8,8),
 	   (9,9),
-	   (10,10);
+	   (10,10),
+	   (1,11),
+	   (2,3),
+	   (2,7);
 
 	   
 INSERT INTO Estacionamento(id_estacionamento,valor_hora,capacidade,nome,id_localizacao)
