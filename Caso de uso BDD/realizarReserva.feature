@@ -1,12 +1,11 @@
 Feature: Realizar uma reserva
 	
 Scenario: Vaga reservada com sucesso!
-    Given eu tenha escolhido realizar uma reserva
-    When eu selecionar o estacionamento listado
-    And selecionar a pátio com as vagas
-    And selecionar disponível a vaga desejada
-    Then devo ver a mensagem “Vaga reservada com sucesso!”
-    And serei redirecionado para um mapa com a rota até a vaga reservada
+    Given eu tenha escolhido solicitar uma reserva de vaga
+    When eu selecionar o estacionamento listado e o tipo da vaga que desejo
+    Then devo ver a mensagem “Solicitação realizada com sucesso!”
+    And estar dentro do raio de 1Km do estacionamento
+    Then devo ver receber o direcionamento para a vaga reservada
 
 
 
