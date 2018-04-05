@@ -68,7 +68,7 @@ Protótipo: https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Mode
 ### 5	MODELO CONCEITUAL<br>
   
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.png"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.png" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.png" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
     
      5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
 
