@@ -126,8 +126,7 @@ cobertura: campo boolean que informa se a vaga é coberta ou não [True/False].<
 status: campo boolean que informa se a vaga está disponível ou não [True/False].<br>
 id_Localizacao: campo que faz referência a um registro da tabela LOCALIZACAO (chave estrangeira).<br>
 id_Tipo: campo que faz referência a um registro da tabela TIPO (chave estrangeira).<br>
-id_Patio: campo que faz referência a um registro da tabela PATIO (chave estrangeira).<br>
-    
+
 <b>Tabela TIPO</b>: Tabela que armazena as informações sobre o tipo da vaga.<br>
 id_Tipo: campo que armazena um número de identificação do tipo (chave primária).<br>
 nome: campo que armazena o nome do tipo [Comum/Idoso/Deficiente/Moto].<br>
@@ -143,12 +142,6 @@ nome: campo que armazena o nome do estacionamento.<br>
 valor_Hora: campo que armazena o valor do estacionamento por hora.<br>
 capacidade: campo que armazena a capacidade de veículos que o estacionamento comporta.<br>
 id_Localizacao: campo que faz referência a um registro da tabela LOCALIZACAO (chave estrangeira).<br>
-    
-<b>Tabela PATIO</b>: Tabela que armazena informações sobre o pátio.<br>
-id_Patio: campo que armazena um número de identificação do pátio (chave primária).<br>
-sigla: campo que armazena a sigla do pátio.<br>
-id_Estacionamento: campo que faz referência a um registro da tabela ESTACIONAMENTO (chave estrangeira).<br>
-<br>
 
 ### 6	MODELO LÓGICO<br>
    <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20L%C3%B3gico.png"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20L%C3%B3gico.png" alt="Alt text" title="Modelo Lógico" style="max-width:100%;"></a>
