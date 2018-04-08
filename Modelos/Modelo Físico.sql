@@ -1,33 +1,35 @@
-/* Modelo LÃ³gico: */
+/* Modelo Físico: */
 
 CREATE TABLE Cliente (
-    id_cliente int PRIMARY KEY,
-    nome Varchar,
-    email Varchar,
-    senha Varchar,
-    cpf bigint
+    nome Varchar(150),
+    cpf int,
+    email Varchar(150),
+    senha Varchar(150),
+    id_cliente int PRIMARY KEY
 );
 
 CREATE TABLE Vaga (
     id_vaga int PRIMARY KEY,
     cobertura boolean,
     status boolean,
-    id_patio int,
+    id_estacionamento int,
     id_localizacao int,
     id_tipo int
 );
 
 CREATE TABLE Estacionamento (
-    id_estacionamento int PRIMARY KEY,
     valor_hora money,
     capacidade int,
-    nome Varchar,   
+    nome Varchar(150),
+    horario_abre Time,
+    horario_fecha Time,
+    id_estacionamento int PRIMARY KEY,
     id_localizacao int
 );
 
 CREATE TABLE Pagamento (
+    dataPagamento Date,
     id_pagamento int PRIMARY KEY,
-    dataPagamento Date,    
     valor money,
     pago boolean,
     id_cartao int
@@ -46,11 +48,11 @@ CREATE TABLE Reserva (
 );
 
 CREATE TABLE Cartao (
-    id_cartao int PRIMARY KEY,
-    nomeTitular Varchar,
-    numeroCartao bigint,
+    nomeTitular Varchar(150),
+    numeroCartao int,
     dataValidade Date,
-    cvv int    
+    cvv int,
+    id_cartao int PRIMARY KEY
 );
 
 CREATE TABLE Localizacao (
@@ -61,13 +63,7 @@ CREATE TABLE Localizacao (
 
 CREATE TABLE Tipo (
     id_tipo int PRIMARY KEY,
-    nome Varchar
-);
-
-CREATE TABLE Patio (
-    id_patio int PRIMARY KEY,
-    sigla Varchar,
-    id_estacionamento int
+    nome Varchar(50)
 );
 
 CREATE TABLE Cliente_Cartao (
@@ -76,8 +72,8 @@ CREATE TABLE Cliente_Cartao (
 );
  
 ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_1
-    FOREIGN KEY (id_patio)
-    REFERENCES Patio (id_patio)
+    FOREIGN KEY (id_estacionamento)
+    REFERENCES Estacionamento (id_estacionamento)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
  
 ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_2
@@ -113,11 +109,6 @@ ALTER TABLE Reserva ADD CONSTRAINT FK_Reserva_2
 ALTER TABLE Reserva ADD CONSTRAINT FK_Reserva_3
     FOREIGN KEY (id_pagamento)
     REFERENCES Pagamento (id_pagamento)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Patio ADD CONSTRAINT FK_Patio_1
-    FOREIGN KEY (id_estacionamento)
-    REFERENCES Estacionamento (id_estacionamento)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
  
 ALTER TABLE Cliente_Cartao ADD CONSTRAINT FK_Cliente_Cartao_0
