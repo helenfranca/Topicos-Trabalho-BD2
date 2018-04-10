@@ -126,6 +126,7 @@ cobertura: campo boolean que informa se a vaga é coberta ou não [True/False].<
 status: campo boolean que informa se a vaga está disponível ou não [True/False].<br>
 id_Localizacao: campo que faz referência a um registro da tabela LOCALIZACAO (chave estrangeira).<br>
 id_Tipo: campo que faz referência a um registro da tabela TIPO (chave estrangeira).<br>
+id_Estacionamento: campo que faz referência a um registro da tabela ESTACIONAMENTO (chave estrangeira).<br>
 
 <b>Tabela TIPO</b>: Tabela que armazena as informações sobre o tipo da vaga.<br>
 id_Tipo: campo que armazena um número de identificação do tipo (chave primária).<br>
