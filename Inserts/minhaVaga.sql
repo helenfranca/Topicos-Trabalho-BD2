@@ -192,9 +192,9 @@ VALUES (1,1),
 	   (2,7);
 
 	   
-INSERT INTO Estacionamento(id_estacionamento,valor_hora,capacidade,nome,id_localizacao)
-VALUES (1,15.00,250,'Shopping Vitória',1),
-	   (2,10.00,200,'Shopping Mestre Álvaro',2);
+INSERT INTO Estacionamento(id_estacionamento,valor_hora,capacidade,nome,horario_abre,horario_fecha,id_localizacao)
+VALUES (1,15.00,250,'Shopping Vitória','07:00','23:00',1),
+	   (2,10.00,200,'Shopping Mestre Álvaro','07:00','23:59',2);
 
 	   
 INSERT INTO Vaga(id_vaga,cobertura,status,id_estacionamento,id_localizacao,id_tipo)
