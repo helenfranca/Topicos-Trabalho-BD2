@@ -1,7 +1,6 @@
 DROP TABLE IF EXISTS Reserva;
 DROP TABLE IF EXISTS Pagamento;
 DROP TABLE IF EXISTS Vaga;
-DROP TABLE IF EXISTS Patio;
 DROP TABLE IF EXISTS Estacionamento;
 DROP TABLE IF EXISTS Cliente_Cartao;
 DROP TABLE IF EXISTS Localizacao;
@@ -23,7 +22,6 @@ CREATE TABLE Vaga (
     id_vaga int PRIMARY KEY,
     cobertura boolean,
     status boolean,
-    id_patio int,
     id_localizacao int,
     id_tipo int
 );
@@ -75,29 +73,18 @@ CREATE TABLE Tipo (
     nome Varchar
 );
 
-CREATE TABLE Patio (
-    id_patio int PRIMARY KEY,
-    sigla Varchar,
-    id_estacionamento int
-);
 
 CREATE TABLE Cliente_Cartao (
     id_cliente int,
     id_cartao int
 );
  
- 
 ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_1
-    FOREIGN KEY (id_patio)
-    REFERENCES Patio (id_patio)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_2
     FOREIGN KEY (id_localizacao)
     REFERENCES Localizacao (id_localizacao)
     ON DELETE CASCADE ON UPDATE CASCADE;
  
-ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_3
+ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_2
     FOREIGN KEY (id_tipo)
     REFERENCES Tipo (id_tipo)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
@@ -126,12 +113,7 @@ ALTER TABLE Reserva ADD CONSTRAINT FK_Reserva_3
     FOREIGN KEY (id_pagamento)
     REFERENCES Pagamento (id_pagamento)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Patio ADD CONSTRAINT FK_Patio_1
-    FOREIGN KEY (id_estacionamento)
-    REFERENCES Estacionamento (id_estacionamento)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
+
 ALTER TABLE Cliente_Cartao ADD CONSTRAINT FK_Cliente_Cartao_0
     FOREIGN KEY (id_cliente)
     REFERENCES Cliente (id_cliente)
@@ -207,19 +189,11 @@ VALUES (1,1),
 INSERT INTO Estacionamento(id_estacionamento,valor_hora,capacidade,nome,id_localizacao)
 VALUES (1,15.00,250,'Shopping Vitória',1),
 	   (2,10.00,200,'Shopping Mestre Álvaro',2);
-	   
-
-INSERT INTO Patio(id_patio,sigla,id_estacionamento) 
-VALUES (1,'G1',1),
-	   (2,'G2',1),
-	   (3,'P1',2),
-	   (4,'G3',1),
-	   (5,'P2',2);
 
 	   
-INSERT INTO Vaga(id_vaga,cobertura,status,id_patio,id_localizacao,id_tipo)
-VALUES (1,'True','True',1,3,3),
-       (2,'True','False',4,4,2);
+INSERT INTO Vaga(id_vaga,cobertura,status,id_localizacao,id_tipo)
+VALUES (1,'True','True',3,3),
+       (2,'True','False',4,2);
 
 
 INSERT INTO Pagamento(id_pagamento,dataPagamento,valor,pago,id_cartao)
@@ -246,5 +220,4 @@ SELECT * from Reserva;
 SELECT * from Cartao;
 SELECT * from Localizacao;
 SELECT * from Tipo;
-SELECT * from Patio;
 SELECT * from Cliente_Cartao;
