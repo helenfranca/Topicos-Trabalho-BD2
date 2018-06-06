@@ -18,7 +18,6 @@ CREATE TABLE Cliente (
     email Varchar(150),
     senha Varchar(150),
     id_cliente int PRIMARY KEY,
-    datanascimento Date
 );
 
 CREATE TABLE Vaga (
