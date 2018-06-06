@@ -1,11 +1,24 @@
-/* Modelo Físico: */
+/* Modelo FÃ­sico: */
+
+DROP TABLE IF EXISTS Reserva;
+DROP TABLE IF EXISTS Pagamento;
+DROP TABLE IF EXISTS Vaga;
+DROP TABLE IF EXISTS Estacionamento;
+DROP TABLE IF EXISTS Cliente_Cartao;
+DROP TABLE IF EXISTS Localizacao;
+DROP TABLE IF EXISTS Tipo;
+DROP TABLE IF EXISTS Cartao;
+DROP TABLE IF EXISTS Cliente;
+
+
 
 CREATE TABLE Cliente (
     nome Varchar(150),
-    cpf int,
+    cpf bigint,
     email Varchar(150),
     senha Varchar(150),
-    id_cliente int PRIMARY KEY
+    id_cliente int PRIMARY KEY,
+    datanascimento Date
 );
 
 CREATE TABLE Vaga (
@@ -28,20 +41,21 @@ CREATE TABLE Estacionamento (
 );
 
 CREATE TABLE Pagamento (
-    dataPagamento Date,
+    datapagamento Date,
     id_pagamento int PRIMARY KEY,
     valor money,
     pago boolean,
-    id_cartao int
+    formapagamento Varchar(20),
+    id_cliente int
 );
 
 CREATE TABLE Reserva (
     id_reserva int PRIMARY KEY,
-    dataReserva Date,
-    horaReserva Time,
-    horaChegada Time,
-    dataSaida Date,
-    horaSaida Time,
+    datareserva Date,
+    horareserva Time,
+    horachegada Time,
+    datasaida Date,
+    horasaida Time,
     id_cliente int,
     id_vaga int,
     id_pagamento int
@@ -92,8 +106,8 @@ ALTER TABLE Estacionamento ADD CONSTRAINT FK_Estacionamento_1
     ON DELETE CASCADE ON UPDATE CASCADE;
  
 ALTER TABLE Pagamento ADD CONSTRAINT FK_Pagamento_1
-    FOREIGN KEY (id_cartao)
-    REFERENCES Cartao (id_cartao)
+    FOREIGN KEY (id_cliente)
+    REFERENCES Cliente (id_cliente)
     ON DELETE CASCADE ON UPDATE CASCADE;
  
 ALTER TABLE Reserva ADD CONSTRAINT FK_Reserva_1
