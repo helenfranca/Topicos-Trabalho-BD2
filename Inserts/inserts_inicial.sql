@@ -65,7 +65,8 @@ CREATE TABLE Cartao (
     numeroCartao int,
     dataValidade Date,
     cvv int,
-    id_cartao int PRIMARY KEY
+    id_cartao int PRIMARY KEY,
+    id_cliente int
 );
 
 CREATE TABLE Localizacao (
@@ -123,15 +124,10 @@ ALTER TABLE Reserva ADD CONSTRAINT FK_Reserva_3
     FOREIGN KEY (id_pagamento)
     REFERENCES Pagamento (id_pagamento)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Cliente_Cartao ADD CONSTRAINT FK_Cliente_Cartao_0
+    
+ALTER TABLE Cartao ADD CONSTRAINT FK_Cliente
     FOREIGN KEY (id_cliente)
     REFERENCES Cliente (id_cliente)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Cliente_Cartao ADD CONSTRAINT FK_Cliente_Cartao_1
-    FOREIGN KEY (id_cartao)
-    REFERENCES Cartao (id_cartao)
     ON DELETE SET NULL ON UPDATE CASCADE;
     
     
@@ -180,24 +176,9 @@ VALUES (1,-40.2876417,-20.3126281),
 	   (2,-40.2748785,-20.2401866),
 	   (3,-40.2880799,-20.31282148),
 	   (4,-40.28898112,-20.31325413);
-	   
-	   
-INSERT INTO Cliente_cartao(id_cliente,id_cartao) 
-VALUES (1,1),
-	   (2,2),
-	   (3,3),
-	   (4,4),
-	   (5,5),
-	   (6,6),
-	   (7,7),
-	   (8,8),
-	   (9,9),
-	   (10,10),
-	   (1,11),
-	   (2,3),
-	   (2,7);
+	   	   
 
-	   
+	  
 INSERT INTO Estacionamento(id_estacionamento,valor_hora,capacidade,nome,horario_abre,horario_fecha,id_localizacao)
 VALUES (1,15.00,250,'Shopping Vitória','07:00','23:00',1),
 	   (2,10.00,200,'Shopping Mestre Álvaro','07:00','23:59',2);
@@ -232,4 +213,3 @@ SELECT * from Reserva;
 SELECT * from Cartao;
 SELECT * from Localizacao;
 SELECT * from Tipo;
-SELECT * from Cliente_Cartao;
