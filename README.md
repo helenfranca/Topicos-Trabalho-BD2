@@ -152,26 +152,29 @@ id_Localizacao: campo que faz referência a um registro da tabela LOCALIZACAO (c
 ### 7	MODELO FÍSICO<br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20F%C3%ADsico.sql">Modelo Físico</a>
 
+
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
 
 Não utilizamos códigos previamente pronto. Desenvolvemos projeto a partir de situações cotidianas. 
 
-        Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
-        Referenciar todas as fontes referentes a:
-        a) obtenção dos dados
-        b) obtenção de códigos reutilizados
-        c) fontes de estudo para desenvolvimento do projeto
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS (ARQUIVO ÚNICO COM):
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/minhaVaga.sql">Script de insert de dados ao banco.</a>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/inserts_inicial.sql">Criação das tabelas e inserção dos dados iniciais.</a>
+<br>
 
-        a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
-        b) inclusão das instruções de inserção dos dados nas referidas tabelas
-        c) inclusão das instruções para execução de outros procedimentos necessários
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	GERACAO DE DADOS (MÍNIMO DE 10 REGISTROS PARA CADA TABELA NO BANCO DE DADOS)<br>
+
+
+
+## Data de Entrega: (18/09/2017)
+
+<br>
+OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
+
+#### 9.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS <br> 
 
 SELECT * from Cliente <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
@@ -219,14 +222,6 @@ SELECT * from Cliente_Cartao <br>
 <br>
 
 <br>
-
-## Data de Entrega: (18/09/2017)
-
-<br>
-OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
-
-#### 9.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS <br> 
-    Data de Entrega: (Data a ser definida)
 <br>
 
 #### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br>
@@ -258,6 +253,10 @@ OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da 
 <br>
 
 #### 9.6	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
+
+Desenvolvemos um script na linguagem python para gerar milhares de dados.
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/ScriptInserts">Scripts de geração de dados para o banco.</a>
+
         a) principal tabela do sistema deve ter no mínimo 1,5 milhão de registros
         b) tabelas diretamente relacionadas a tabela principal 100 mil registros
         c) tabelas auxiliares de relacao multivalorada mínimo de 10 registros
