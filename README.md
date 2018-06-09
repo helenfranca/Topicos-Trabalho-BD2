@@ -241,6 +241,7 @@ on (cliente.id_cliente = reserva.id_cliente) limit 15 <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/join_cliente_reserva.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/join_cliente_reserva.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>
 <br>
+<br>
 
 
 create view nome_clientes as
@@ -248,6 +249,7 @@ select nome, cpf from cliente;
 
 select * from nome_clientes limit 10 <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/view_cliente.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/view_cliente.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
 <br>
 <br>
 
@@ -259,25 +261,26 @@ select * from estacionamentos <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/view_estacionamento.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/view_estacionamento.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>
 <br>
-
+<br>
 
 select exists (select * from pagamento where valor > '600,00' and valor < '1000,00') <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_1.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_1.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>
 <br>
+<br>
 
 
 select exists (select distinct pago from pagamento where valor > '600,00' and valor < '1100,00') <br>
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_2.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_2.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exist_2.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_2.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>
 <br>
-
+<br>
 
 select not exists (select * from reserva where datareserva > '01-05-2018') <br>
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_3.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_3.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exist_3.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exist_3.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>
 <br>
-
+<br>
 
 
 alter table pagamento add check (formapagamento = 'Dinheiro' or formapagamento = 'Cartao')
@@ -287,7 +290,7 @@ INSERT INTO pagamento (id_pagamento,dataPagamento,valor,pago,formaPagamento,id_c
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/check_pagamento.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/check_pagamento.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>
 <br>
-
+<br>
 
 
 alter table tipo add check (nome in ('Comum','Deficiente','Idoso','Moto'))
@@ -299,7 +302,7 @@ INSERT INTO tipo (id_tipo, nome) VALUES
 <br>
 <br>
 <br>
-
+<br>
 #### 9.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
         Detalhamento sobre funcionalidade de cada código.
         a) Objetivo
