@@ -271,7 +271,7 @@ select exists (select * from pagamento where valor > '600,00' and valor < '1000,
 
 
 select exists (select distinct pago from pagamento where valor > '600,00' and valor < '1100,00') <br>
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exist_2.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_2.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exist_2.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exist_2.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>
 <br>
 <br>
