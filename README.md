@@ -233,6 +233,58 @@ SELECT * from Cliente_Cartao <br>
         c) as funcionalidades informadas no minimundo ou nos mockups(protótipos), que representarem 
         views do sistema (relatórios, informações disponíveis para os usuários, etc) devem estar 
         presentes aqui. 
+        
+Select nome,email,horareserva
+from cliente
+inner join reserva
+on (cliente.id_cliente = reserva.id_cliente) limit 15
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/join_cliente_reserva.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/join_cliente_reserva.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
+<br>
+
+
+create view nome_clientes as
+select nome, cpf from cliente;
+
+select * from nome_clientes limit 10
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/view_cliente.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/view_cliente.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
+<br>
+
+
+create view estacionamentos as 
+select nome, valor_hora, capacidade from estacionamento;
+
+select * from estacionamentos
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/view_estacionamento.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/view_estacionamento.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
+<br>
+
+
+select exists (select * from pagamento where valor > '600,00' and valor < '1000,00')
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_1.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/exists_1.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
+<br>
+
+/*  exists_2 */
+select exists (select distinct pago from pagamento where valor > '600,00' and valor < '1100,00')
+
+/*  exists_3 */
+select not exists (select * from reserva where datareserva > '01-05-2018')
+
+
+/*  check_pagamento */
+alter table pagamento add check (formapagamento = 'Dinheiro' or formapagamento = 'Cartao')
+
+INSERT INTO pagamento (id_pagamento,dataPagamento,valor,pago,formaPagamento,id_cliente) VALUES
+	(501,'2018-06-05','20.00',True,'Cheque',1)
+
+
+/*  check_tipo */
+alter table tipo add check (nome in ('Comum','Deficiente','Idoso','Moto'))
+
+INSERT INTO tipo (id_tipo, nome) VALUES 
+	(5,'Aviao')
 <br>
 
 #### 9.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
