@@ -17,7 +17,7 @@ CREATE TABLE Cliente (
     cpf bigint,
     email Varchar(150),
     senha Varchar(150),
-    id_cliente int PRIMARY KEY,
+    id_cliente int PRIMARY KEY
 );
 
 CREATE TABLE Vaga (
