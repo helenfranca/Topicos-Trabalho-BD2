@@ -4,7 +4,6 @@ DROP TABLE IF EXISTS Reserva;
 DROP TABLE IF EXISTS Pagamento;
 DROP TABLE IF EXISTS Vaga;
 DROP TABLE IF EXISTS Estacionamento;
-DROP TABLE IF EXISTS Cliente_Cartao;
 DROP TABLE IF EXISTS Localizacao;
 DROP TABLE IF EXISTS Tipo;
 DROP TABLE IF EXISTS Cartao;
@@ -80,10 +79,6 @@ CREATE TABLE Tipo (
     nome Varchar(50)
 );
 
-CREATE TABLE Cliente_Cartao (
-    id_cliente int,
-    id_cartao int
-);
  
 ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_1
     FOREIGN KEY (id_estacionamento)
@@ -131,9 +126,7 @@ ALTER TABLE Cartao ADD CONSTRAINT FK_Cliente
     ON DELETE SET NULL ON UPDATE CASCADE;
     
     
-    
-    
-/* Inserts iniciais */
+   
 
 INSERT INTO Cliente(id_cliente,nome,email,senha,cpf)
 VALUES (1,'Maria da Graça','mariadagraca@email.com','maria123',12345678910),
@@ -150,18 +143,18 @@ VALUES (1,'Maria da Graça','mariadagraca@email.com','maria123',12345678910),
 	   
 	   
 -- datavalidade deve ser AAAA-MM, está desse modo abaixo pois o banco não aceita só ano/mês
-INSERT INTO Cartao(id_cartao,nomeTitular,numeroCartao,dataValidade,cvv) 
-VALUES (1,'Maria da Graca',111122223333444,'2022-02-01',123),
-	   (2,'Joao Silva',2222333344445555,'2022-03-01',234),
-	   (3,'Jose Antunes',3333444455556666,'2023-04-01',345),
-	   (4,'Lara Lima',4444555566667777,'2023-05-01',456),
-	   (5,'Magali Melancia',5555666677778888,'2024-03-01',567),
-	   (6,'Joana Ferreira',6666777788889999,'2024-04-01',678),
-	   (7,'Moana de Motonui',7777888899990000,'2025-02-01',789),
-	   (8,'Maui Semideus',8888999900001111,'2025-03-01',890),
-	   (9,'Manoela Marlim',9999000011112222,'2022-06-01',901),
-	   (10,'Carol Carine',0000111122223333,'2023-06-01',012),
-	   (11,'Maria da Graca',2020303040405050,'2022-02-03',123);
+INSERT INTO Cartao(id_cartao,nomeTitular,numeroCartao,dataValidade,cvv,id_cliente) 
+VALUES (1,'Maria da Graca',111122223333444,'2022-02-01',123,1),
+	   (2,'Joao Silva',2222333344445555,'2022-03-01',234,2),
+	   (3,'Jose Antunes',3333444455556666,'2023-04-01',345,1),
+	   (4,'Lara Lima',4444555566667777,'2023-05-01',456,3),
+	   (5,'Magali Melancia',5555666677778888,'2024-03-01',567,4),
+	   (6,'Joana Ferreira',6666777788889999,'2024-04-01',678,4),
+	   (7,'Moana de Motonui',7777888899990000,'2025-02-01',789,5),
+	   (8,'Maui Semideus',8888999900001111,'2025-03-01',890,2),
+	   (9,'Manoela Marlim',9999000011112222,'2022-06-01',901,6),
+	   (10,'Carol Carine',0000111122223333,'2023-06-01',012,7),
+	   (11,'Maria da Graca',2020303040405050,'2022-02-03',123,4);
 	   
 
 INSERT INTO Tipo(id_tipo,nome) 
@@ -189,7 +182,7 @@ VALUES (1,'True','True',1,3,3),
        (2,'True','False',1,4,2);
 
 
-INSERT INTO Pagamento(id_pagamento,dataPagamento,valor,pago,id_cartao)
+INSERT INTO Pagamento(id_pagamento,dataPagamento,valor,pago,id_cliente)
 VALUES (1,'2018-01-23',20.00,'True',1),
 	   (2,'2018-02-20',15.00,'True',2),
 	   (3,'2018-03-18',30.00,'True',5),
