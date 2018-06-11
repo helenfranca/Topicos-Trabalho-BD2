@@ -172,7 +172,6 @@ Não utilizamos códigos previamente pronto. Desenvolvemos projeto a partir de s
 ## Data de Entrega: (18/09/2017)
 
 <br>
-OBS: Incluir para os tópicos 9.2 e 9.3 as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 
 #### 9.2	SELECT DAS TABELAS COM PRIMEIROS 10 REGISTROS INSERIDOS <br> 
 
@@ -304,11 +303,10 @@ INSERT INTO tipo (id_tipo, nome) VALUES
 <br>
 <br>
 #### 9.4	LISTA DE CODIGOS DAS FUNÇÕES, ASSERÇOES E TRIGGERS<br>
-        Detalhamento sobre funcionalidade de cada código.
-        a) Objetivo
-        b) Código do objeto (função/trigger/asserção)
-        c) exemplo de dados para aplicação
-        d) resultados em forma de tabela/imagem
+	
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/edit/master/SQL/funcoes_assercoes_triggers.sql">Código contendo as funções, asserções e tiggers.</a>
+<br>
+
 <br>
 
 #### 9.5	Administração do banco de dados<br>
