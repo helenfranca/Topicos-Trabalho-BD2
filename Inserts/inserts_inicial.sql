@@ -79,7 +79,7 @@ CREATE TABLE Tipo (
     nome Varchar(50)
 );
 
- 
+
 ALTER TABLE Vaga ADD CONSTRAINT FK_Vaga_1
     FOREIGN KEY (id_estacionamento)
     REFERENCES Estacionamento (id_estacionamento)
@@ -194,7 +194,17 @@ INSERT INTO Localizacao (id_localizacao,latitude,longitude) VALUES
 	(17,-27.757853,53.460657),
 	(18,14.545535,170.263701),
 	(19,-9.9714765,71.858571),
-	(20,37.9466755,-63.582455);
+	(20,37.9466755,-63.582455),
+	(21,18.237416,20.034899),
+	(22,-52.949143,-172.627316),
+	(23,28.441137,-16.315230),
+	(24,44.064434,12.092784),
+	(25,75.211367,143.546670),
+	(26,71.3980785,-132.997294),
+	(27,52.168107,-82.361460),
+	(28,-54.256948,-126.597828),
+	(29,-86.3054185,80.403839),
+	(30,87.2231435,-121.293637);
 	   	   
 
 	  
@@ -246,7 +256,7 @@ INSERT INTO Pagamento (id_pagamento,dataPagamento,valor,pago,formaPagamento,id_c
 	(17,'2018-02-02','10.00',True,'Dinheiro',17),
 	(18,'2018-02-07','6.00',False,'Dinheiro',18),
 	(19,'2018-04-24','10.00',True,'Dinheiro',19),
-	(20,'2018-05-03','10.00',False,'Dinheiro',20),
+	(20,'2018-05-03','10.00',False,'Dinheiro',20);
 
 	   
 INSERT INTO Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,horaSaida,id_cliente,id_vaga,id_pagamento) VALUES
