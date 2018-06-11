@@ -13,8 +13,8 @@ DROP TABLE IF EXISTS Cliente;
 
 CREATE TABLE Cliente (
     nome Varchar(150),
-    cpf bigint,
-    email Varchar(150),
+    cpf varchar(11) UNIQUE,
+    email Varchar(150) UNIQUE,
     senha Varchar(150),
     id_cliente int PRIMARY KEY
 );
@@ -31,7 +31,7 @@ CREATE TABLE Vaga (
 CREATE TABLE Estacionamento (
     valor_hora money,
     capacidade int,
-    nome Varchar(150),
+    nome Varchar(200),
     horario_abre Time,
     horario_fecha Time,
     id_estacionamento int PRIMARY KEY,
