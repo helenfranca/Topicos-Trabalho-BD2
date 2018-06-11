@@ -116,10 +116,12 @@ numeroCartao: campo que armazena o número impresso no cartão de crédito.<br>
 dataValidade: campo que armazena a data de validade do cartão de crédito.<br>
 cvv: campo que armazena o numero do código de verificação do cartão.<br>
 
+<!--
 <b>Tabela CLIENTE_CARTAO</b>: Tabela que armazena as informações sobre a ligação entre o cliente e o cartão por ele cadastrado.<br>
 id_Cliente: campo que faz referência a um registro da tabela CLIENTE (chave estrangeira).<br>
 id_Cartao: campo que faz referência a um registro da tabela CARTAO (chave estrangeira).<br>
-    
+-->
+
 <b>Tabela VAGA</b>: Tabela que armazena as informações sobre a vaga.<br>
 id_Vaga: campo que armazena o número de identificação da vaga (chave primária).<br>
 cobertura: campo boolean que informa se a vaga é coberta ou não [True/False].<br>
