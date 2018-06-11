@@ -300,6 +300,7 @@ INSERT INTO tipo (id_tipo, nome) VALUES
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/check_tipo.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.3%20SELECT%20DAS%20VISOES%20COM%20PRIMEIROS%2010%20REGISTROS%20DA%20VIEW/check_tipo.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>
 <br>
+
 <br>
 <br>
 <br>
@@ -307,9 +308,29 @@ INSERT INTO tipo (id_tipo, nome) VALUES
 	
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/edit/master/SQL/funcoes_assercoes_triggers.sql">Código contendo as funções, asserções e tiggers.</a>
 <br>
-
 <br>
 
+CREATE FUNCTION checkPendencias() RETURNS TRIGGER AS ' 
+BEGIN
+IF EXISTS (Select R.id_cliente, R.id_pagamento, P.id_pagamento from RESERVA R inner join PAGAMENTO P on (P.pago=False)
+) THEN
+RAISE EXCEPTION ''Erro: Cliente contém reservas com pendência!''; END IF; RETURN NULL; END
+'
+LANGUAGE plpgsql;
+
+CREATE TRIGGER checkPendenciasTrigger AFTER INSERT OR UPDATE OF id_cliente ON RESERVA
+FOR EACH ROW
+EXECUTE PROCEDURE checkPendencias();
+
+Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,horaSaida,id_cliente,id_vaga,id_pagamento) VALUES
+(21,'2018-06-08','19:00','19:20','2018-06-08','20:20',2,10,2); <br>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.4%20LISTA%20DE%20CODIGOS%20DAS%20FUN-ES-%20ASSER-OES%20E%20TRIGGERS/checkPendencias.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.4%20LISTA%20DE%20CODIGOS%20DAS%20FUN-ES-%20ASSER-OES%20E%20TRIGGERS/checkPendencias.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
+<br>
+
+
+<br>
+<br>
 #### 9.5	Administração do banco de dados<br>
         Descrição detalhada sobre como serão executadas no banco de dados as <br>
         seguintes atividades.
