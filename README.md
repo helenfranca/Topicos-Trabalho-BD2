@@ -220,10 +220,6 @@ SELECT * from Tipo <br>
 <br>  
 <br>
 
-SELECT * from Cliente_Cartao <br>
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente_Cartao.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cliente_Cartao.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
-<br>  
-<br>
 
 <br>
 <br>
