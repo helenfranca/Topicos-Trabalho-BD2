@@ -321,7 +321,9 @@ EXECUTE PROCEDURE checkPendencias();
 
 Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,horaSaida,id_cliente,id_vaga,id_pagamento) VALUES
 (21,'2018-06-08','19:00','19:20','2018-06-08','20:20',2,10,2); <br>
+<br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.4%20LISTA%20DE%20CODIGOS%20DAS%20FUN-ES-%20ASSER-OES%20E%20TRIGGERS/checkPendencias.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.4%20LISTA%20DE%20CODIGOS%20DAS%20FUN-ES-%20ASSER-OES%20E%20TRIGGERS/checkPendencias.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
 <br>
 <br>
 
@@ -338,8 +340,10 @@ FOR EACH ROW
 EXECUTE PROCEDURE checkVagaDisponivel();
 
 Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,horaSaida,id_cliente,id_vaga,id_pagamento) VALUES
-(22,'2018-06-08','19:00','19:20','2018-06-08','20:20',2,2,20); <br>
+(22,'2018-06-08','19:00','19:20','2018-06-08','20:20',2,2,20); <br> 
+<br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.4%20LISTA%20DE%20CODIGOS%20DAS%20FUN-ES-%20ASSER-OES%20E%20TRIGGERS/checkVagaDisponivel.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.4%20LISTA%20DE%20CODIGOS%20DAS%20FUN-ES-%20ASSER-OES%20E%20TRIGGERS/checkVagaDisponivel.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
 <br>
 <br>
 
