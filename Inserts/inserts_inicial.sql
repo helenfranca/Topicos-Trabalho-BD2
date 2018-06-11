@@ -70,8 +70,8 @@ CREATE TABLE Cartao (
 
 CREATE TABLE Localizacao (
     id_localizacao int PRIMARY KEY,
-    longitude int,
-    latitude int
+    longitude Decimal,
+    latitude Decimal
 );
 
 CREATE TABLE Tipo (
