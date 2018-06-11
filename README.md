@@ -325,6 +325,24 @@ Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,ho
 <br>
 <br>
 
+CREATE FUNCTION checkVagaDisponivel() RETURNS TRIGGER AS ' 
+BEGIN
+IF EXISTS (Select R.id_vaga, V.id_vaga, V.status from RESERVA R inner join VAGA V on (V.status=False)
+) THEN
+RAISE EXCEPTION ''Erro: Esta vaga já está reservada!''; END IF; RETURN NULL; END
+'
+LANGUAGE plpgsql;
+
+CREATE TRIGGER checkVagaDisponivelTrigger AFTER INSERT OR UPDATE OF id_vaga ON RESERVA
+FOR EACH ROW
+EXECUTE PROCEDURE checkVagaDisponivel();
+
+Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,horaSaida,id_cliente,id_vaga,id_pagamento) VALUES
+(22,'2018-06-08','19:00','19:20','2018-06-08','20:20',2,2,20); <br>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.4%20LISTA%20DE%20CODIGOS%20DAS%20FUN-ES-%20ASSER-OES%20E%20TRIGGERS/checkVagaDisponivel.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/SQL/9.4%20LISTA%20DE%20CODIGOS%20DAS%20FUN-ES-%20ASSER-OES%20E%20TRIGGERS/checkVagaDisponivel.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
+<br>
+
 
 <br>
 <br>
@@ -335,6 +353,9 @@ Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,ho
         b) Estimativas de aquisição de recursos para armazenamento e processamento da informação
         c) Planejamento de rotinas de manutenção e monitoramento do banco
         d) Plano com frequencia de análises visando otimização de performance
+	
+A Segurança do Banco de Dados do sistema MinhaVaga será garantida pela autorização de aceso apenas parar os usuários...................
+
 <br>
 
 #### 9.6	GERACAO DE DADOS (MÍNIMO DE 1,5 MILHÃO DE REGISTROS PARA PRINCIPAL RELAÇAO)<br>
