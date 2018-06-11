@@ -68,7 +68,7 @@ Protótipo: https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Mode
 ### 5	MODELO CONCEITUAL<br>
   
 #### 5.1 NOTACAO ENTIDADE RELACIONAMENTO
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.PNG" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.png"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Modelos/Modelo%20Conceitual.png" alt="Alt text" title="Modelo Conceitual" style="max-width:100%;"></a>
     
      5.2 NOTACAO UML (Caso esteja fazendo a disciplina de Projeto)
 
@@ -221,15 +221,7 @@ SELECT * from Tipo <br>
 <br>
 <br>
 
-#### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br>
-        a) Descrição da view sobre que grupos de usuários (operacional/estratégico) <br>
-        e necessidade ela contempla.
-        b) Descrição das permissões de acesso e usuários correlacionados (após definição <br>
-        destas características)
-    Data de Entrega: (Data a ser definida)
-        c) as funcionalidades informadas no minimundo ou nos mockups(protótipos), que representarem 
-        views do sistema (relatórios, informações disponíveis para os usuários, etc) devem estar 
-        presentes aqui. 
+#### 9.3	SELECT DAS VISÕES COM PRIMEIROS 10 REGISTROS DA VIEW <br> 
         
 Select nome,email,horareserva
 from cliente
@@ -358,7 +350,8 @@ Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,ho
         c) Planejamento de rotinas de manutenção e monitoramento do banco
         d) Plano com frequencia de análises visando otimização de performance
 	
-A Segurança do Banco de Dados do sistema MinhaVaga será garantida pela autorização de aceso apenas parar os usuários...................
+A Segurança do Banco de Dados do sistema MinhaVaga será garantida pela autorização de acesso expecifica para cada tipo de usuário do sistema. Um cliente motorista não terá o mesmo acesso que um Administrador ou um Gerente.
+
 
 <br>
 
@@ -366,15 +359,14 @@ A Segurança do Banco de Dados do sistema MinhaVaga será garantida pela autoriz
 
 Desenvolvemos um script na linguagem python para gerar milhares de dados.
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/ScriptInserts">Scripts de geração de dados para o banco.</a>
+<br>
 
-        a) principal tabela do sistema deve ter no mínimo 1,5 milhão de registros
-        b) tabelas diretamente relacionadas a tabela principal 100 mil registros
-        c) tabelas auxiliares de relacao multivalorada mínimo de 10 registros
-        d) registrar o tempo de inserção em cada uma das tabelas do banco de dados
-        e) especificar a quantidade de registros inseridos em cada tabela
-        Para melhor compreensão verifiquem o exemplo na base de testes:<br>
-        https://github.com/discipbd2/base-de-testes-locadora
-        
+Estado do Banco de Dados com 1 milhão de registros:
+<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/EstadoBanco_1milhao/estado.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/EstadoBanco_1milhao/estado.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
+<br>
+<br>
+<br>
+
 
 
 #### 9.7	Backup do Banco de Dados<br>
