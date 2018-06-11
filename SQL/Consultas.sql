@@ -5,13 +5,6 @@ inner join reserva
 on (cliente.id_cliente = reserva.id_cliente) limit 15
 
 
-/*  FALTA */
-Select nome,cobertura,status,horareserva
-from reserva
-inner join vaga on (vaga.id_tipo = reserva.id_vaga) 
-left join tipo on (vaga.id_vaga = tipo.id_tipo) limit 10 
-
-
 /*  view_cliente */
 create view nome_clientes as
 select nome, cpf from cliente;
