@@ -56,9 +56,9 @@ RAISE EXCEPTION ''Erro: Esta vaga já está reservada!''; END IF; RETURN NULL; E
 '
 LANGUAGE plpgsql;
 
-CREATE TRIGGER checkPendenciasTriggercheckVagaDisponivelTrigger AFTER INSERT OR UPDATE OF id_cliente ON RESERVA
+CREATE TRIGGER checkVagaDisponivelTrigger AFTER INSERT OR UPDATE OF id_vaga ON RESERVA
 FOR EACH ROW
-EXECUTE PROCEDURE checkPendenciascheckVagaDisponivel();
+EXECUTE PROCEDURE checkVagaDisponivel();
 
 Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,horaSaida,id_cliente,id_vaga,id_pagamento) VALUES
 (22,'2018-06-08','19:00','19:20','2018-06-08','20:20',2,2,20);
