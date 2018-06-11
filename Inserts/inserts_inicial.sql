@@ -62,7 +62,7 @@ CREATE TABLE Reserva (
 
 CREATE TABLE Cartao (
     nomeTitular Varchar(150),
-    numeroCartao int,
+    numeroCartao bigint,
     dataValidade Date,
     cvv int,
     id_cartao int PRIMARY KEY,
