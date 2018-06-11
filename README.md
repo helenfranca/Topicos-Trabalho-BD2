@@ -206,9 +206,6 @@ SELECT * from Cartao <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cartao.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Cartao.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
 <br>  
 <br>
-<a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Tabela_Cartao.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Tabela_Cartao.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
-<br>  
-<br>
 
 SELECT * from Localizacao <br>
 <a href="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Localizacao.PNG"><img src="https://github.com/helenfranca/Topicos-Trabalho-BD2/blob/master/Inserts/Localizacao.PNG" alt="Alt text" title="..." style="max-width:100%;"></a>
