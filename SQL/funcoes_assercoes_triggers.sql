@@ -1,3 +1,4 @@
+/* ERRO: CREATE ASSERTION is not yet implemented */
 CREATE ASSERTION cliente_pagamento_pendente CHECK 
 (EXISTS 
 (Select R.id_cliente, R.id_pagamento, P.id_pagamento from RESERVA R inner join PAGAMENTO P on (P.pago=False)
@@ -5,6 +6,7 @@ CREATE ASSERTION cliente_pagamento_pendente CHECK
 )
 
 
+/* ERRO: CREATE ASSERTION is not yet implemented */
 CREATE ASSERTION cliente_tem_cartao CHECK 
 (EXISTS 
 (Select C.id_cliente, T.id_cliente from CLIENTE C inner join CARTAO T on (C.id_cliente = T.id_cliente)
@@ -12,6 +14,7 @@ CREATE ASSERTION cliente_tem_cartao CHECK
 )
 
 
+/* ERRO: CREATE ASSERTION is not yet implemented */
 CREATE ASSERTION cliente_tem_reserva CHECK 
 (EXISTS 
 (Select C.id_cliente, R.id_cliente from CLIENTE C inner join RESERVA R on (C.id_cliente = R.id_cliente)
@@ -19,6 +22,7 @@ CREATE ASSERTION cliente_tem_reserva CHECK
 )
 
 
+/* ERRO: CREATE ASSERTION is not yet implemented */
 CREATE ASSERTION tem_vaga_disponivel CHECK 
 (EXISTS 
 (Select id_vaga, status from VAGA where status=’true’
@@ -28,7 +32,8 @@ CREATE ASSERTION tem_vaga_disponivel CHECK
 
 
 
-/* checkPendencias */
+
+/* TRIGGER checkPendencias */
 CREATE FUNCTION checkPendencias() RETURNS TRIGGER AS ' 
 BEGIN
 IF EXISTS (Select R.id_cliente, R.id_pagamento, P.id_pagamento from RESERVA R inner join PAGAMENTO P on (P.pago=False)
@@ -47,7 +52,7 @@ Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,ho
 
 
 
-/* checkVagaDisponivel */
+/* TRIGGER checkVagaDisponivel */
 CREATE FUNCTION checkVagaDisponivel() RETURNS TRIGGER AS ' 
 BEGIN
 IF EXISTS (Select R.id_vaga, V.id_vaga, V.status from RESERVA R inner join VAGA V on (V.status=False)
