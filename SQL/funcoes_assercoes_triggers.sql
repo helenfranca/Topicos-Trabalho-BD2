@@ -33,7 +33,7 @@ CREATE ASSERTION tem_vaga_disponivel CHECK
 
 
 
-/* TRIGGER checkPendencias */
+/* ASSERTION checkPendencias */
 CREATE FUNCTION checkPendencias() RETURNS TRIGGER AS ' 
 BEGIN
 IF EXISTS (Select R.id_cliente, R.id_pagamento, P.id_pagamento from RESERVA R inner join PAGAMENTO P on (P.pago=False)
@@ -52,7 +52,7 @@ Insert into Reserva (id_reserva,dataReserva,horaReserva,horaChegada,dataSaida,ho
 
 
 
-/* TRIGGER checkVagaDisponivel */
+/* ASSERTION checkVagaDisponivel */
 CREATE FUNCTION checkVagaDisponivel() RETURNS TRIGGER AS ' 
 BEGIN
 IF EXISTS (Select R.id_vaga, V.id_vaga, V.status from RESERVA R inner join VAGA V on (V.status=False)
