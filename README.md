@@ -368,6 +368,10 @@ Estado do Banco de Dados com 1 milhão de registros:
 <br>
 
 
+<br>
+Data de Entrega: (Data a ser definida)
+<br>
+
 
 #### 9.7	Backup do Banco de Dados<br>
         Detalhamento do backup.
@@ -379,8 +383,6 @@ Estado do Banco de Dados com 1 milhão de registros:
         f) Tempo para restauração (script sql)
 <br>
 
-Data de Entrega: (Data a ser definida)
-<br>
 
 #### 9.8	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
     a) Lista de índices, tipos de índices com explicação de porque foram implementados nas consultas 
